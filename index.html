@@ -13,31 +13,37 @@
   <main>
     <!-- Sign-up form start -->
     <section class="signUp">
-      <h2>Stay updated!</h2>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul>
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
-      </ul>
-      <form >
-        <label for="email">Email address</label>
-        <input type="email" required>email@company.com</input>
-        <button class="subscribe">Subscribe to monthly newsletter</button>
-      </form>
+      <div class="not-image-container">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li> <img src="images/icon-list.svg" alt="" aria-hidden="true"> Product discovery and building what matters</li>
+          <li><img src="images/icon-list.svg" alt="" aria-hidden="true">Measuring to ensure updates are a success</li>
+          <li><img src="images/icon-list.svg" alt="" aria-hidden="true">And much more!</li>
+        </ul>
+        <div class="form">
+          <div class="formUp"><label for="email">Email address</label> <p class="notificInvalidEmail">Valid email required</p></div>
+          <input type="email"  placeholder="email@company.com" id="email" required>
+          <button class="subscribe">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="./images/illustration-sign-up-desktop.svg" alt="dashboard">
+      </div>
        <!-- Sign-up form end -->
     </section>
    
     <section class="sucess-container">
       <!-- Success message start -->
+      <div class="img-container"><img src="images/icon-success.svg" alt="" aria-hidden="true"></div>
       <h2>Thanks for subscribing!</h2>
       <p>
-        A confirmation email has been sent to ash@loremcompany.com.
+        A confirmation email has been sent to <span class="email">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
       <button class="dismiss">Dismiss message</button>
     </section>
   </main>
-
+  <script src="main.js"></script>
 </body>
 </html>

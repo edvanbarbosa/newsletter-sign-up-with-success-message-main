@@ -1,7 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #36384e;
+}
+body main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body main .signUp {
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1em;
+}
+body main .signUp .not-image-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em;
+  gap: 0.5em;
+}
+body main .signUp .not-image-container h2 {
+  font-weight: 700;
+  font-size: 3em;
+  color: #36384e;
+  padding-bottom: 0.2em;
+}
+body main .signUp .not-image-container p {
+  color: #36384e;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+}
+body main .signUp .not-image-container ul {
+  list-style: none;
+  padding-bottom: 1em;
+}
+body main .signUp .not-image-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #36384e;
+  font-size: 0.8em;
+}
+body main .signUp .not-image-container ul li img {
+  transform: scale(0.7);
+}
+body main .signUp .not-image-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+body main .signUp .not-image-container .form .formUp {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+body main .signUp .not-image-container .form .formUp p {
+  display: none;
+  color: #ff6257;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+body main .signUp .not-image-container .form label {
+  color: #36384e;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+body main .signUp .not-image-container .form input.wrongEmail {
+  background-color: rgba(255, 98, 87, 0.3137254902);
+  border: 2px solid #ff6257;
+  color: #ff6257;
+  outline: none;
+}
+body main .signUp .not-image-container .form input.wrongEmail::placeholder {
+  color: #ff6257;
+}
+body main .signUp .not-image-container .form input.wrongEmail:focus {
+  outline: none;
+  border: 2px solid #ff6257;
+}
+body main .signUp .not-image-container .form input {
+  height: 3.5em;
+  border-radius: 5px;
+  border: 1px solid #9294a0;
+  padding: 0 1em;
+  font-size: 0.8em;
+  color: #36384e;
+  margin-bottom: 1em;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+body main .signUp .not-image-container .form input:focus {
+  outline: none;
+  border: 1.5px solid #36384e;
+}
+body main .signUp .not-image-container .form button {
+  width: 100%;
+  height: 3.5em;
+  border-radius: 5px;
+  border: none;
+  background-color: #36384e;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+body main .signUp .not-image-container .form button:hover {
+  background: #ff6257;
+  box-shadow: 0px 0px 16px 2px #ff6257;
+}
+body main .signUp .image-container {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body main .signUp .image-container img {
+  height: 100%;
+  width: 100%;
+}
+body main .sucess-container {
+  display: none;
+  flex-direction: column;
+  height: 65%;
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 3em;
+  gap: 1em;
+}
+body main .sucess-container h2 {
+  font-weight: 700;
+  font-size: 2.8em;
+  color: #36384e;
+  padding-bottom: 0.2em;
+}
+body main .sucess-container p {
+  color: #36384e;
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+body main .sucess-container p .email {
+  font-weight: 700;
+}
+body main .sucess-container button {
+  width: 100%;
+  height: 3.5em;
+  border-radius: 5px;
+  border: none;
+  background-color: #36384e;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+body main .sucess-container button:hover {
+  background: #ff6257;
+  box-shadow: 0px 0px 16px 2px #ff6257;
+}
+body main .sucess-container .img-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20%;
+}
+body main .sucess-container .img-container img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

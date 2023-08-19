@@ -1,6 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "var";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $roboto;
+}
+body{
+    height: 100vh;
+    background-color: $Cinza-ardosia-escuro;
+
+    main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        .signUp{
+            display: flex;
+            justify-content: space-between;
+            height: 60%;
+            width: 50%;
+            background-color: $Branco;
+            border-radius: 20px;
+            padding: 1em;
+
+            .not-image-container{
+                height: 100%;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 2em;
+                gap: .5em;
+
+
+                h2{
+                    font-weight: 700;
+                    font-size: 3em;
+                    color: $Cinza-ardosia-escuro;
+                    padding-bottom: .2em;
+                }
+                p{
+                    
+                    color: $Cinza-ardosia-escuro;
+                    padding-bottom: 1em;
+                    font-size: .8em;
+                }
+
+                ul{
+                    list-style: none;
+                    padding-bottom: 1em;
+
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: .5em;
+                        color: $Cinza-ardosia-escuro;
+                        font-size: .8em;
+                       
+                        img{
+                            transform: scale(0.7);
+                        }
+                        
+                    }
+                }
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5em;
+
+                    .formUp{
+                        display: flex;
+                        justify-content: space-between;
+                        height: 10%;
+                        p{  
+                            display: none;
+                            color: $tomato;
+                            font-size: .8em;
+                            font-weight: 700;
+                        }
+                    }
+                    label{
+                        color: $Cinza-ardosia-escuro;
+                        font-size: .7em;
+                        font-weight: 700;
+                    }
+
+                    input.wrongEmail{
+                        background-color: #ff625750;
+                        border: 2px solid $tomato;
+                        color: $tomato;
+                        outline: none;
+
+                        &::placeholder{
+                            color: $tomato;
+                        }
+
+                        &:focus{
+                            outline: none;
+                            border: 2px solid $tomato;
+                        }
+                    }
+
+                    input{
+                        height: 3.5em;
+                        border-radius: 5px;
+                        border: 1px solid $Cinza;
+                        padding: 0 1em;
+                        font-size: .8em;
+                        color: $Cinza-ardosia-escuro;
+                        margin-bottom: 1em;
+                        outline: none;
+                        transition: .3s ease-in-out;
+
+                       
+
+                        &:focus{
+                            outline: none;
+                            border: 1.5px solid $Cinza-ardosia-escuro;
+                        }
+                    }
+
+
+                    
+                    button{
+                        width: 100%;
+                        height: 3.5em;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: $Cinza-ardosia-escuro;
+                        color: $Branco;
+                        font-size: .8em;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition: .2s ease-in-out;
+
+                        &:hover{
+                            background: $tomato  ;
+                            box-shadow: 0px 0px 16px 2px $tomato;
+                        }
+                    }
+
+                }
+
+            }
+
+            .image-container{
+                height: 100%;
+                width: 40%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+
+                }
+
+            
+            }
+        }
+
+        .sucess-container{
+            display: none;
+            flex-direction: column;
+            height: 65%;
+            width: 30%;
+            background-color: $Branco;
+            border-radius: 20px;
+            padding: 3em;
+            gap: 1em;
+
+            h2{
+                font-weight: 700;
+                font-size: 2.8em;
+                color: $Cinza-ardosia-escuro;
+                padding-bottom: .2em;
+            }
+            p{
+                color: $Cinza-ardosia-escuro;
+                padding-bottom: 1em;
+                font-size: 1em;
+
+                .email{
+                    font-weight: 700;
+                }
+            }
+            button {
+                width: 100%;
+                height: 3.5em;
+                border-radius: 5px;
+                border: none;
+                background-color: $Cinza-ardosia-escuro;
+                color: $Branco;
+                font-size: .8em;
+                font-weight: 700;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+
+                &:hover{
+                    background: $tomato  ;
+                    box-shadow: 0px 0px 16px 2px $tomato;
+                }
+            }
+            .img-container{
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                height: 20%;
+                img{
+                    height: 100%;
+
+                }
+                
+            }
+            
+            
+        }
+    }
 }
 
